@@ -1,28 +1,167 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>检验报告</title>
-<style>
-body{font-family:sans-serif;padding:20px;max-width:500px;margin:0 auto}
-h1{font-size:1.2em}
-.report{background:#f9f9f9;padding:15px;border-radius:8px}
-.field{margin:8px 0}
-.label{font-weight:bold;display:inline-block;width:100px}
-</style>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>检验报告 - TSSI-SZZZ25110149</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .report-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 24px 20px 32px;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            color: #1e3c72;
+            margin-bottom: 8px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .report-id {
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+        }
+        .info-grid {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px 16px 8px 16px;
+            margin-bottom: 24px;
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        .info-label {
+            width: 90px;
+            font-weight: 600;
+            color: #2c3e50;
+            flex-shrink: 0;
+        }
+        .info-value {
+            flex: 1;
+            color: #1e2a3a;
+            word-break: break-word;
+        }
+        .conclusion {
+            background-color: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 20px 0 16px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .notice {
+            background-color: #fff3e0;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #b85c00;
+            border-left: 4px solid #ff9800;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 12px;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+            padding-top: 20px;
+        }
+        .footer a {
+            color: #2c7da0;
+            text-decoration: none;
+        }
+        @media (max-width: 480px) {
+            .report-container {
+                padding: 16px;
+            }
+            .info-label {
+                width: 80px;
+                font-size: 14px;
+            }
+            .info-value {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>检验报告</h1>
-<div class="report">
-<div class="field"><span class="label">报告编号：</span>TSSI-SZZZ25110149</div>
-<div class="field"><span class="label">使用单位：</span>深圳市杰达工程机械有限公司</div>
-<div class="field"><span class="label">设备类别：</span>装载机</div>
-<div class="field"><span class="label">设备名称：</span>轮式装载机</div>
-<div class="field"><span class="label">设备型号：</span>ZL936Z</div>
-<div class="field"><span class="label">设备编号：</span>K2081713040</div>
-<div class="field"><span class="label">检验类别：</span>委托检验</div>
-<div class="field"><span class="label">检验日期：</span>2025年11月24日</div>
-<div class="field"><span class="label">检测机构：</span>广东科标特检技术有限公司</div>
-<div class="field"><span class="label">检验结论：</span><strong style="color:green">合格</strong></div>
+<div class="report-container">
+    <h1>检验报告</h1>
+    <div class="report-id">报告编号：TSSI-SZZZ25110149</div>
+
+    <div class="info-grid">
+        <div class="info-row">
+            <div class="info-label">使用单位：</div>
+            <div class="info-value">深圳市杰达工程机械有限公司</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">设备类别：</div>
+            <div class="info-value">装载机</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">设备名称：</div>
+            <div class="info-value">轮式装载机</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">设备型号：</div>
+            <div class="info-value">ZL936Z</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">设备编号：</div>
+            <div class="info-value">K2081713040</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">检验类别：</div>
+            <div class="info-value">委托检验</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">检验日期：</div>
+            <div class="info-value">2025年11月24日</div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">检测机构：</div>
+            <div class="info-value">广东科标特检技术有限公司</div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        📋 检验结论：<strong style="color:#2e7d32;">合格</strong>
+    </div>
+
+    <div class="notice">
+        ⚠️ 报告说明：此份报告信息如内容为空则真实性存疑，请联系本公司核实。<br>
+        📞 联系电话：020-82350707
+    </div>
+
+    <div class="footer">
+        本报告信息由检测机构提供，仅供参考。<br>
+        报告编号：TSSI-SZZZ25110149
+    </div>
 </div>
-<div class="note" style="color:#666;margin-top:20px;font-size:0.9em">※ 此报告信息如内容为空则真实性存疑，请联系：020-82350707</div>
 </body>
 </html>
